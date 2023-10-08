@@ -23,6 +23,7 @@ const SearchParams = () => {
 
     setPets(json.pets);
   }
+
   return (
     <div className="search-params">
       <form
