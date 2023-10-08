@@ -17,7 +17,6 @@ const Details = () => {
   }
 
   const pet = results.data.pets[0];
-  console.log(pet);
 
   return (
     <div className="details">
