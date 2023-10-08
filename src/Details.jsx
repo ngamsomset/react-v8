@@ -21,7 +21,7 @@ const Details = () => {
   return (
     <div className="details">
       <div>
-        <h1>pet.name</h1>
+        <h1>{pet.name}</h1>
         <h2>{`${pet.animal} - ${pet.breed} - ${pet.city} - ${pet.state}`}</h2>
         <button>Adopot {pet.name}</button>
         <p>{pet.description}</p>
