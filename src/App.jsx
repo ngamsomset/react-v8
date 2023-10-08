@@ -3,6 +3,7 @@ import SearchParams from './SearchParams';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Details from './Details';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/details/:id" element={<Details />} />
           <Route path="/" element={<SearchParams />} />
         </Routes>
+        <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
     </BrowserRouter>
   );
